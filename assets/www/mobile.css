@@ -1,0 +1,71 @@
+div#home-content.ui-content, div#offline-page.ui-page div.ui-content  {
+   text-align: center;
+}
+
+div#tweet.ui-page div#twitter.ui-content ul li a {
+    color: #000000;
+    font-weight: bold;
+}
+
+.ui-grid-a .ui-block-a, .ui-grid-a .ui-block-b  {
+   height: 150px;
+}
+
+div#twitter.ui-content ul {
+	border: 0 none;	
+	display: block;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+div#twitter.ui-content ul li p {
+
+}
+
+div#twitter.ui-content ul li img {
+	background-color: #fff;
+	border: 1px solid #423b35;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-right: 10px;
+	vertical-align: top;
+}
+
+.balloon{
+   background: none repeat scroll 0 0 #fff;
+    border: 1px solid #423b35;
+    display: block;
+    margin-left: 64px;
+    margin-top: -50px;
+    padding: 10px;
+    position: relative;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+
+	/* ... */
+}
+
+.balloon::after,
+.balloon::before{
+	display:block;
+	position:absolute;
+	z-index:1;
+	top:10px;
+	left:-20px;
+	width:0px;
+	height:0px;
+	border-style: solid;
+	border-width: 10px 10px 10px 10px;
+	border-color: transparent #423b35 transparent transparent ;
+	content:' ';
+
+}
+.balloon::before{
+	z-index:2;
+	left:-19px;
+	border-right-color:#fff;
+
+}
+
